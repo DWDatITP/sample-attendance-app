@@ -1,0 +1,15 @@
+{
+  "name": "itp-attendance",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Cory Forsyth <cory.forsyth@gmail.com> (http://coryforsyth.com/)",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.12.3",
+    "express-handlebars": "^2.0.0"
+  }
+}
