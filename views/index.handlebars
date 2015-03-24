@@ -1,1 +1,13 @@
-<h1>hello</h1>
+<h3>Students</h3>
+<ul>
+  {{#each students}}
+    <li>{{name}} ({{email}})</li>
+  {{else}}
+    <li><em>No students</em></li>
+  {{/each}}
+</ul>
+
+<h3>Commands</h3>
+<ul>
+  <li><a href="/students/new">Add student</a></li>
+</ul>
