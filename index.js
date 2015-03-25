@@ -56,7 +56,7 @@ app.post('/students', function(request, response){
 });
 
 var classes = [
-  {number: 1, startsAt: moment.utc('2015-02-25 21:00'), endsAt: moment.utc('2015-03-26 1:00')},
+  {number: 1, startsAt: moment.utc('2015-03-25 21:00'), endsAt: moment.utc('2015-03-26 1:00')},
   {number: 2, startsAt: moment.utc('2015-04-01 21:00'), endsAt: moment.utc('2015-04-02 1:00')},
   {number: 3, startsAt: moment.utc('2015-04-08 21:00'), endsAt: moment.utc('2015-04-09 1:00')},
   {number: 4, startsAt: moment.utc('2015-04-15 21:00'), endsAt: moment.utc('2015-04-16 1:00')},
