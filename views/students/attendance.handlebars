@@ -1,0 +1,11 @@
+<h2>Attendance for {{student.name}}</h2>
+
+{{#if currentClass}}
+  Current class: Week {{currentClass.number}}
+  <form method='post' action='/students/{{student.id}}/attendance'>
+    <input type="hidden" name="week" value="{{currentClass.number}}">
+    <button type='submit'>{{student.name}} is here</button>
+  </form>
+{{else}}
+  Hmm, this doesn't seem to be a class week.
+{{/if}}

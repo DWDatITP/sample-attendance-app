@@ -1,13 +1,24 @@
-<h3>Students</h3>
+<h3>Students ({{students.length}})</h3>
 <ul>
   {{#each students}}
-    <li>{{name}} ({{email}})</li>
+    <li>
+      {{name}} ({{email}})<br>
+      <a href='/students/{{id}}/attendance'>Mark <b>{{name}}</b> here.</a>
+      {{#if weeks.length}}
+        <p>Attended weeks:
+        {{#each weeks}}
+          {{this}},
+        {{/each}}
+      {{/if}}
+      </p>
+    </li>
   {{else}}
     <li><em>No students</em></li>
   {{/each}}
 </ul>
 
-<h3>Commands</h3>
+<h3>Instructions</h3>
 <ul>
-  <li><a href="/students/new">Add student</a></li>
+  <li>First click <a href="/students/new">here</a> to add yourself to the list of students.</li>
+  <li>Then click the "Mark yourself here" link next to your name in the list above.</li>
 </ul>
